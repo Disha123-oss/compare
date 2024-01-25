@@ -49,7 +49,7 @@ public class CompareDataServiceImpl implements CompareDataService {
             try {
                 String variantId = compareItem.getVariantId();
                 String productId = compareItem.getProductId();
-                String productApiUrl = "https://product.test.initz.run/multikart/v1/product/byvariantid";
+                String productApiUrl = "https://product.prod.psi.initz.run/multikart/v1/product/byvariantid";
 
                 UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(productApiUrl)
                         .queryParam("productId", productId)
